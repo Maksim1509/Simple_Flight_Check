@@ -1,0 +1,300 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+//============================= login page
+.login-page {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1024px;
+  background-image: url(./assets/images/main.jpg);
+  background-repeat: no-repeat;
+};
+
+.blur {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  opacity: 0.6;
+}
+// ==================== Form
+.form {
+  position: absolute;
+  left: 515px;
+  top: 306px;
+  width: 410px;
+  height: 338px;
+  padding-top: 53px;
+  padding-bottom: 37px;
+  padding: 53px 32px 37px 33px;;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+.form-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.form-label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.form-field {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #C9CACC;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-login {
+  margin-bottom: 25px;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 116px;
+  height: 34px;
+  background: linear-gradient(104.34deg, #3C4CAD -15.34%, #00C3FF 145.95%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 4px #99A0A3;
+  }
+}
+
+//====================main
+
+.main-page {
+  margin: 0 auto;
+  margin-top: 69px;
+  max-width: 680px;
+  width: 100%;
+  height: 895px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 65px 40px 40px;
+}
+//========================= = = = = =====HEADER
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-route {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+color: #424242;
+}
+
+
+.date {
+  position: relative;
+  width: 223px;
+  height: 28px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 22px;
+  color: #1157A7;
+}
+.date-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.date-icon {
+  margin-left: 15px;
+}
+.date-input {
+  width: 223px;
+  height: 28px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  &::-webkit-calendar-picker-indicator {
+    width: 193px;
+    cursor: pointer;
+  }
+}
+//================= = = ==  ========= = =  carousel
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 149px;
+  margin-top: 24px;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+  }
+}
+.carousel-img {
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+//==================favorites
+.favorites {
+  width: 300px;
+  height: 21px;
+  margin-left: 10px;
+  margin-top: 31px;
+  margin-bottom: 12px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+  &-count {
+    color: #1157A7;
+  }
+}
+
+//=================flight list
+.flights-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 515px;
+  border-right: 2px solid #E7E7E7;
+  padding-right: 11px;
+}
+.flights-list-item {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 22px 12px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+}
+.flight-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 119, 255, 0.05);
+  border-radius: 50%;
+}
+
+.flight-route {
+  margin-left: 24px;
+  h3 {
+    margin: 0;
+  }
+}
+.flight-date {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #878787;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.flight-company {
+  flex-basis: 100%;
+}
+.flight-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+  small {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 22px;
+    color: #878787;
+    margin-right: 8px;
+  }
+}
+.favorite-icon {
+  margin-right: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+//=========icons
+.vector {
+  margin: 0 20px;
+}
+
+.icon-arrow {
+  margin: 0 12px;
+}
+
+.dash {
+  width: 9px;
+  height: 1px;
+  background: #C4C4C4;
+  border-radius: 2px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.wrap {
+  display: flex;
+}
