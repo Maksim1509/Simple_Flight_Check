@@ -1,6 +1,8 @@
 /* eslint-disable no-param-reassign */
-import { createSlice } from '@reduxjs/toolkit';
+import { createAction, createSlice } from '@reduxjs/toolkit';
 import dateParse from '../utils/dateParse';
+
+const logout = createAction('auth/logout');
 
 const dateSlice = createSlice({
   name: 'date',
@@ -11,6 +13,11 @@ const dateSlice = createSlice({
     setDate: (state, { payload }) => {
       console.log(payload.date);
       state.date = payload.date;
+    },
+  },
+  extraReducers: {
+    [logout]: (state) => {
+      state.date = dateParse(new Date());
     },
   },
 });

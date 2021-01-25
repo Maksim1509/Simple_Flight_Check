@@ -2,10 +2,14 @@ import * as icons from '../components/icons/Icons';
 import Calendar from '../components/Calendar';
 import FlightList from '../components/FlightList';
 import Favorites from '../components/Favorites';
-
+import Logout from '../components/Logout';
+ 
 const Main = () => (
-  <div className="container">
-    <div className="main-page">
+  <div className="main-page">
+    <div className="main-page-content">
+      <div className="main-page-logout">
+        <Logout />
+      </div>
       <header className='header'>
         <div className="header-route">
           Вылеты {icons.vector} SVO - JFK

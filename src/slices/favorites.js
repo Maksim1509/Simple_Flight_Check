@@ -1,5 +1,7 @@
 /* eslint-disable no-param-reassign */
-import { createSlice } from '@reduxjs/toolkit';
+import { createAction, createSlice } from '@reduxjs/toolkit';
+
+const logout = createAction('auth/logout');
 
 const favoritesSlice = createSlice({
   name: 'favorites',
@@ -14,6 +16,11 @@ const favoritesSlice = createSlice({
       state.favoriteIds = state.favoriteIds.filter((id) => id !== payload.id);
     },
   },
+  extraReducers: {
+    [logout]: (state) => {
+      state.favoriteIds = [];
+    }
+  }
 });
 
 export const actions = favoritesSlice.actions;

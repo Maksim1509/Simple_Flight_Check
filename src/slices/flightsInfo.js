@@ -1,5 +1,7 @@
 /* eslint-disable no-param-reassign */
-import { createSlice } from '@reduxjs/toolkit';
+import { createAction, createSlice } from '@reduxjs/toolkit';
+
+const logout = createAction('auth/logout');
 
 const flightsSlice = createSlice({
   name: 'flights',
@@ -13,6 +15,12 @@ const flightsSlice = createSlice({
     },
     updateFlights: (state, { payload }) => {
       state.flightList = payload.data;
+    },
+  },
+  extraReducers: {
+    [logout]: (state) => {
+      state.flightList = [];
+      state.date = null;
     },
   },
 });
