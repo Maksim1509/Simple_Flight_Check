@@ -157,22 +157,18 @@ color: #424242;
 //================= = = ==  ========= = =  carousel
 
 .carousel {
-  display: flex;
   width: 100%;
   height: 149px;
   margin-top: 24px;
-  overflow-x: scroll;
-  &::-webkit-scrollbar {
-    width: 0px;
-    height: 0;
+  div {
+    outline: none;
   }
 }
 .carousel-img {
+  width: 164px;
+  height: 149px;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-  margin-right: 15px;
-  &:last-child {
-    margin-right: 0;
-  }
+  margin-right: 12px;
 }
 
 //==================favorites

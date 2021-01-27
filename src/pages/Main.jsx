@@ -4,6 +4,7 @@ import Calendar from '../components/Calendar';
 import FlightList from '../components/FlightList';
 import Favorites from '../components/Favorites';
 import Logout from '../components/Logout';
+import Carousel from '../components/Carousel';
 
 const Main = () => (
   <div className="main-page">
@@ -20,12 +21,7 @@ const Main = () => (
         <Calendar />
       </header>
       <main>
-        <div className="carousel">
-          <img className="carousel-img" src="./img1.png" alt="ny" />
-          <img className="carousel-img" src="./img2.png" alt="ny" />
-          <img className="carousel-img" src="./img3.png" alt="ny" />
-          <img className="carousel-img" src="./img1.png" alt="ny" />
-        </div>
+        <Carousel />
         <Favorites />
         <section className="flights-container">
           <FlightList />
