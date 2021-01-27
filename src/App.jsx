@@ -17,17 +17,20 @@ const PrivateRoute = (props) => {
   );
 };
 
-const App = () => (
-  <BrowserRouter>
-    <div className="container">
-      <Switch>
-        <Route path='/' exact component={Login} />
-        <PrivateRoute>
-          <Main/>
-        </PrivateRoute>
-      </Switch>
-    </div> 
-  </BrowserRouter>
-);
+const App = () => {
+  const { isAuth } = useSelector((state) => state.auth);
+  return (
+    <BrowserRouter>
+      <div className="container">
+        <Switch>
+          <Route path='/' exact component={Login} />
+          <PrivateRoute>
+            <Main/>
+          </PrivateRoute>
+        </Switch>
+      </div> 
+    </BrowserRouter>
+  );
+};
 
 export default App;

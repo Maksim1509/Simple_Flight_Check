@@ -2,12 +2,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as icons from './icons/Icons';
 import { actions } from '../slices';
 import dateParse from '../utils/dateParse';
+import localStore from 'store';
+import { useEffect } from 'react';
 
 const Calendar = () => {
   const { date } = useSelector(state => state.dateInfo);
   const dispatch = useDispatch();
   
-
+  useEffect(() => {
+    localStore.set('date', date);
+  })
   const selectDateHandle = (e) => {
     console.log(e.target.value);
     const date = e.target.value;

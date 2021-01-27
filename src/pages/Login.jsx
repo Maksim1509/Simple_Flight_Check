@@ -2,6 +2,7 @@ import { Formik, Form, Field } from 'formik';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { actions } from '../slices';
+import localStore from 'store';
 
 
 
@@ -11,6 +12,7 @@ const Login = () => {
   const submitHandle = (values, { resetForm }) => {
     dispatch(actions.login());
     resetForm();
+    localStore.set('isAuth', true);
     history.push('/main');
   };
 

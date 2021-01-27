@@ -3,13 +3,21 @@ import { actions } from '../slices';
 import * as icons from '../components/icons/Icons';
 import { toDateString } from '../utils/dateParse';
 import prettify from '../utils/prettifyNumber';
-
+import localStore from 'store'; 
+import { useEffect } from 'react';
 
 
 const FlightList = () => {
   const dispatch = useDispatch();
   const { flightList, date } = useSelector((state) => state.flightsInfo);
   const { favoriteIds } = useSelector((state) => state.favoritesInfo);
+
+  useEffect(()=> {
+    localStore.set('flightList', flightList);
+    localStore.set('flightDate', date);
+    localStore.set('favoriteIds', favoriteIds);
+  })
+
   const renderFlightInfo = (props) => {
     const favoriteToggle = (id) => () => {
       if (favoriteIds.includes(id)) {
@@ -18,7 +26,6 @@ const FlightList = () => {
         dispatch(actions.addToFavorites({ id }));
       }
     };
-  
     const { carrier, price, date, id } = props;
     return (
       <div className="flight-info">
