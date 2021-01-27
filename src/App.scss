@@ -95,6 +95,8 @@
 .main-page {
   background-color: #F3F4F5;
   padding: 69px 0 69px;
+  font-family: 'San Francisco', sans-serif;
+  line-height: 22px;
 }
 .main-page-content {
   margin: 0 auto;
@@ -124,13 +126,12 @@ color: #424242;
 
 .date {
   position: relative;
-  width: 223px;
+  width: 230px;
   height: 28px;
-  font-family: SF Pro Text;
+  font-family: 'San Francisco';
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
-  line-height: 22px;
   color: #1157A7;
 }
 .date-content {
@@ -180,11 +181,9 @@ color: #424242;
   margin-left: 10px;
   margin-top: 31px;
   margin-bottom: 12px;
-  font-family: SF Pro Text;
   font-style: normal;
   font-weight: 300;
   font-size: 17px;
-  line-height: 22px;
   letter-spacing: -0.408px;
   color: #424242;
   &-count {
@@ -211,11 +210,9 @@ color: #424242;
   display: flex;
   justify-content: space-between;
   padding: 20px 0px 22px 12px;
-  font-family: SF Pro Text;
   font-style: normal;
   font-weight: 300;
   font-size: 17px;
-  line-height: 22px;
   letter-spacing: -0.408px;
   color: #424242;
 }
@@ -236,11 +233,9 @@ color: #424242;
   }
 }
 .flight-date {
-  font-family: SF Pro Text;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
   letter-spacing: -0.408px;
   color: #878787;
   margin: 0;
@@ -257,17 +252,14 @@ color: #424242;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  font-family: SF Pro Text;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
-  line-height: 22px;
   letter-spacing: -0.408px;
   color: #424242;
   small {
     font-weight: 300;
     font-size: 11px;
-    line-height: 22px;
     color: #878787;
     margin-right: 8px;
   }
@@ -312,11 +304,9 @@ color: #424242;
   position: absolute;
   text-decoration: none;
 
-  font-family: SF Pro Text;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 22px;
   letter-spacing: -0.408px;
   color: #1157A7;
 }

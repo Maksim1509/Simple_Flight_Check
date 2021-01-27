@@ -25,7 +25,7 @@ const FlightList = () => {
         <div className="wrap">
           <div className="flight-icon">{icons.iconPlane}</div>
           <div className="flight-route">
-            <h3>Moscow (SVO){icons.iconArrow}New York City (JFK)</h3>
+            <span>Moscow (SVO){icons.iconArrow}New York City (JFK)</span>
             <div className="flight-date">
               {toDateString(new Date(date))}
               <div className="dash" />
@@ -44,7 +44,7 @@ const FlightList = () => {
             <button className="favorite-icon" onClick={favoriteToggle(id)}>
               {icons.iconFavorite}
             </button>}
-          <div className="price"><small>Price:</small> {prettify(price)}</div>
+          <div className="price"><small>Price:</small>{`${prettify(price)} ₽`}</div>
         </div>
       </div>
     );
