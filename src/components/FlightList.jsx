@@ -46,6 +46,7 @@ const FlightList = () => {
             </button>}
           <div className="price"><small>Price:</small>{`${prettify(price)} ₽`}</div>
         </div>
+        <div className="flight-border"></div>
       </div>
     );
   };
