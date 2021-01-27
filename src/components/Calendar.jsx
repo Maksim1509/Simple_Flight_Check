@@ -8,13 +8,12 @@ import { actions } from '../slices';
 const Calendar = () => {
   const { date } = useSelector((state) => state.dateInfo);
   const dispatch = useDispatch();
-
+  const inputRef = React.createRef();
   useEffect(() => {
     localStore.set('date', date);
   });
 
   const selectDateHandle = (e) => {
-    console.log(e.target.value);
     const selectedDate = e.target.value;
     dispatch(actions.setDate({ date: dateParse(new Date(selectedDate)) }));
     dispatch(actions.requestFlights({ date: selectedDate }));
@@ -26,7 +25,7 @@ const Calendar = () => {
         <span className="date-text">{date}</span>
         <div className="date-icon">{icons.iconCalendar}</div>
       </div>
-      <input className="date-input" type="date" onChange={selectDateHandle} />
+      <input className="date-input" ref={inputRef} type="date" onInput={selectDateHandle} />
     </div>
   );
 };
