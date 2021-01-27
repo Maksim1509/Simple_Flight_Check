@@ -1,6 +1,6 @@
 const dateParser = (date) => {
   const months = [
-  'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря',
+    'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря',
   ];
   const day = date.getDate();
   const month = months[date.getMonth()];
@@ -16,6 +16,6 @@ export const toDateString = (date) => {
   const month = monthNames[date.getMonth()];
   const year = date.getFullYear();
   return `${day} ${month}, ${year}`;
-}
+};
 
 export default dateParser;

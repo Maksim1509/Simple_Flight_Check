@@ -1,5 +1,8 @@
+import React from 'react';
 import { useSelector } from 'react-redux';
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import {
+  BrowserRouter, Route, Switch, Redirect,
+} from 'react-router-dom';
 import Login from './pages/Login';
 import Main from './pages/Main';
 
@@ -17,20 +20,17 @@ const PrivateRoute = (props) => {
   );
 };
 
-const App = () => {
-  const { isAuth } = useSelector((state) => state.auth);
-  return (
-    <BrowserRouter>
-      <div className="container">
-        <Switch>
-          <Route path='/' exact component={Login} />
-          <PrivateRoute>
-            <Main/>
-          </PrivateRoute>
-        </Switch>
-      </div> 
-    </BrowserRouter>
-  );
-};
+const App = () => (
+  <BrowserRouter>
+    <div className="container">
+      <Switch>
+        <Route path="/" exact component={Login} />
+        <PrivateRoute>
+          <Main />
+        </PrivateRoute>
+      </Switch>
+    </div>
+  </BrowserRouter>
+);
 
 export default App;

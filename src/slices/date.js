@@ -11,7 +11,6 @@ const dateSlice = createSlice({
   },
   reducers: {
     setDate: (state, { payload }) => {
-      console.log(payload.date);
       state.date = payload.date;
     },
   },
@@ -22,5 +21,5 @@ const dateSlice = createSlice({
   },
 });
 
-export const actions = dateSlice.actions;
+export const { actions } = dateSlice;
 export default dateSlice.reducer;

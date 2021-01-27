@@ -5,8 +5,17 @@ import flightsInfo, { actions as flightsActions } from './flightsInfo';
 import favoritesInfo, { actions as favoritesActions } from './favorites';
 
 export default combineReducers({
-  auth, dateInfo, flightsInfo, favoritesInfo
+  auth,
+  dateInfo,
+  flightsInfo,
+  favoritesInfo,
 });
 
-const actions = { ...authActions, ...dateActions, ...flightsActions, ...favoritesActions };
+const actions = {
+  ...authActions,
+  ...dateActions,
+  ...flightsActions,
+  ...favoritesActions,
+};
+
 export { actions };

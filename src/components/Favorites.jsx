@@ -1,10 +1,13 @@
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Favorites = () => {
-  const { favoriteIds } = useSelector((state) => state.favoritesInfo)
+  const { favoriteIds } = useSelector((state) => state.favoritesInfo);
   return (
     <p className="favorites">
-      Добавлено в Избранное:  <span className="favorites-count">{favoriteIds.length}</span> рейсов
+      Добавлено в Избранное:
+      <span className="favorites-count">{` ${favoriteIds.length} `}</span>
+      рейсов
     </p>
   );
 };
