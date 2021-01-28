@@ -31,6 +31,7 @@ const runApp = () => {
     flightsInfo: {
       flightList,
       date: flightDate,
+      error: null,
     },
     favoritesInfo: {
       favoriteIds,

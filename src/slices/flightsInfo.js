@@ -8,6 +8,7 @@ const flightsSlice = createSlice({
   initialState: {
     flightList: [],
     date: null,
+    error: null,
   },
   reducers: {
     requestFlights: (state, { payload }) => {
@@ -15,6 +16,10 @@ const flightsSlice = createSlice({
     },
     updateFlights: (state, { payload }) => {
       state.flightList = payload.data;
+    },
+    failedUpdateFlights: (state) => {
+      state.error = 'REQUEST FAILED';
+      state.flightList = [];
     },
   },
   extraReducers: {

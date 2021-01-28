@@ -22,7 +22,7 @@ function* requestFlights({ payload }) {
     const parsedData = flightDataParse(data);
     yield put({ type: 'flights/updateFlights', payload: { data: parsedData } });
   } catch (e) {
-    yield put({ type: 'flights/updateFlights', flightsList: 'error' });
+    yield put({ type: 'flights/failedUpdateFlights' });
   }
 }
 
