@@ -1,10 +1,11 @@
 import React from 'react';
 import * as icons from '../components/icons/Icons';
-import Calendar from '../components/Calendar';
-import FlightList from '../components/FlightList';
-import Favorites from '../components/Favorites';
-import Logout from '../components/Logout';
-import Carousel from '../components/Carousel';
+import Calendar from '../components/Calendar/Calendar';
+import FlightList from '../components/FlightList/FlightList';
+import Favorites from '../components/Favorites/Favorites';
+import Logout from '../components/Logout/Logout';
+import Carousel from '../components/Carousel/Carousel';
+import './main-page.scss';
 
 const Main = () => (
   <div className="main-page">

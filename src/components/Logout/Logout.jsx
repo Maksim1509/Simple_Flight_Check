@@ -2,8 +2,9 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import localStore from 'store';
-import { iconLogout } from './icons/Icons';
-import { actions } from '../slices';
+import { iconLogout } from '../icons/Icons';
+import { actions } from '../../slices';
+import './logout.scss';
 
 const Logout = () => {
   const history = useHistory();

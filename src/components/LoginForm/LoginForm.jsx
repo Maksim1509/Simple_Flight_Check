@@ -5,8 +5,9 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import localStore from 'store';
 import cn from 'classnames';
-import { actions } from '../slices';
-import loginSchema from '../validate';
+import { actions } from '../../slices';
+import loginSchema from '../../validate';
+import './loginForm.scss';
 
 const LoginForm = () => {
   const dispatch = useDispatch();

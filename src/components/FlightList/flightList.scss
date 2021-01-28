@@ -1,0 +1,98 @@
+.flights-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 515px + 98px;
+  border-right: 2px solid #E7E7E7;
+  padding-right: 11px;
+}
+.flights-list-item {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+  &:hover .flight-border{
+    opacity: 1;
+  }
+  &:first-child .flight-info {
+    padding-top: 6px;
+  }
+}
+.flight-border {
+  position: absolute;
+  width: 2px;
+  height: 98px;
+  right: -12px;
+  top: 0px;
+  background: #1157A7;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 22px 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: -0.408px;
+  color: #424242;
+  
+}
+.flight-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 119, 255, 0.05);
+  border-radius: 50%;
+}
+
+.flight-route {
+  margin-left: 24px;
+  h3 {
+    margin: 0;
+  }
+}
+.flight-date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.408px;
+  color: #878787;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.flight-company {
+  flex-basis: 100%;
+}
+.flight-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: -0.408px;
+  color: #424242;
+  small {
+    font-weight: 300;
+    font-size: 11px;
+    color: #878787;
+    margin-right: 8px;
+  }
+}
+.favorite-icon {
+  margin-right: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}

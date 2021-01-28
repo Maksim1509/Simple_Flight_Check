@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './favorites.scss';
 
 const Favorites = () => {
   const { favoriteIds } = useSelector((state) => state.favoritesInfo);

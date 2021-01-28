@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import localStore from 'store';
-import dateParse from '../utils/dateParse';
-import * as icons from './icons/Icons';
-import { actions } from '../slices';
+import dateParse from '../../utils/dateParse';
+import * as icons from '../icons/Icons';
+import { actions } from '../../slices';
+import './calendar.scss';
 
 const Calendar = () => {
   const { date } = useSelector((state) => state.dateInfo);

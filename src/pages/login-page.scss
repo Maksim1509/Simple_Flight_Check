@@ -1,0 +1,17 @@
+.login-page {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1024px;
+  background-image: url(../assets/images/main.jpg);
+  background-repeat: no-repeat;
+};
+
+.blur {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  opacity: 0.6;
+}

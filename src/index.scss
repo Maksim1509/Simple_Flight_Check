@@ -1,6 +1,5 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
-@import './App.scss';
 
 body {
   margin: 0;
@@ -15,3 +14,9 @@ code {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import './assets/SFProText-Regular/fonts.css';
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}

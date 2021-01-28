@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import localStore from 'store';
-import { actions } from '../slices';
-import * as icons from './icons/Icons';
-import prettify from '../utils/prettifyNumber';
-import { toDateString } from '../utils/dateParse';
+import { actions } from '../../slices';
+import * as icons from '../icons/Icons';
+import prettify from '../../utils/prettifyNumber';
+import { toDateString } from '../../utils/dateParse';
+import './flightList.scss';
 
 const FlightList = () => {
   const dispatch = useDispatch();
